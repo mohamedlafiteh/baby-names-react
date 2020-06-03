@@ -1,10 +1,15 @@
 import React from 'react'
-import babyNamesData from './babyNameData.json';
 
-function BabyNames() {
+
+function BabyNames(props) {
+    // console.log('this is props' + props);
     return (
         <div>
-            
+
+            <ul>    
+            <li>{props.item.name}</li> 
+            </ul>
+          
         </div>
     )
 }
