@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BabyNames from './BabyNames'
+import babyNamesData from './babyNamesData.json';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Search 
+      <BabyNames names={} />
     </div>
   );
 }
