@@ -6,10 +6,16 @@ import Navbar from "./Navbar";
 import SearchInput from "./SearchInput ";
 
 function App() {
+  const [searchResults, setSearchResults] = React.useState([]);
+
   return (
     <div className='App'>
       <Navbar />
-      <SearchInput />
+      <SearchInput
+        searchResults={searchResults}
+        setSearchResults={setSearchResults}
+        babyNamesData={babyNamesData}
+      />
       <form>
         <ttable>
           <thead>
@@ -20,7 +26,7 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {babyNamesData.map((item) => {
+            {searchResults.map((item) => {
               return <BabyNames item={item} />;
             })}
           </tbody>
