@@ -2,25 +2,30 @@ import React from "react";
 import BabyNames from "./BabyNames";
 import "./App.css";
 import babyNamesData from "./babyNamesData.json";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Navbar";
+import SearchInput from "./SearchInput ";
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello from App </h1>
-      <table>
-        <thead>
-          <tr>Boys</tr>
-          <tr>Girls</tr>
-        </thead>
-        <tbody>
-          <tr>1</tr>
-          <tr>2</tr>
-        </tbody>
-      </table>
-      {babyNamesData.map((item) => {
-        return <BabyNames item={item} />;
-      })}
+      <Navbar />
+      <SearchInput />
+      <form>
+        <ttable>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Boys & Girls</th>
+              <th>Add to Favorite</th>
+            </tr>
+          </thead>
+          <tbody>
+            {babyNamesData.map((item) => {
+              return <BabyNames item={item} />;
+            })}
+          </tbody>
+        </ttable>
+      </form>
     </div>
   );
 }

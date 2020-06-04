@@ -1,9 +1,18 @@
-.baby-names {
-  display: inline-block;
-  color: blue;
+th,
+td {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
-.words {
-  word-spacing: 10px;
-  justify-content: space-around;
+th {
+  background-color: grey;
+}
+
+.screenreader {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
