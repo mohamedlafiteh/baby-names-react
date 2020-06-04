@@ -1,0 +1,9 @@
+.baby-names {
+  display: inline-block;
+  color: blue;
+}
+
+.words {
+  word-spacing: 10px;
+  justify-content: space-around;
+}

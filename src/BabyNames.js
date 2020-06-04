@@ -1,17 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import "./babyNames.css";
 
 function BabyNames(props) {
-    // console.log('this is props' + props);
-    return (
-        <div>
-
-            <ul>    
-            <li>{props.item.name}</li> 
-            </ul>
-          
-        </div>
-    )
+  return (
+    <div className='baby-names'>
+      <h1 className='words'>{props.item.name}</h1>
+    </div>
+  );
 }
 
-export default BabyNames
+export default BabyNames;
